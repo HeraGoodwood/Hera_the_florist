@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>CUSTOMER REGISTRATION FORM</title>
+</head>
+<style>
+.body_bg
+{
+	background: url(red_buds_flowers-wide.jpg) no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;*/
+	background-color: lightblue;
+}
+.data{
+   background-color:lightGrey;}
+
+.Back {
+    position: fixed; /* or position: absolute; */
+    top: 0;
+    right: 0;
+	//border: none;
+    	background-color: black;
+    	padding: 14px 28px;
+    	font-size: 16px;
+    	cursor: pointer;
+    	color: white;
+}
+
+</style>
+<body class="body_bg">
+<div class="header" align="center">
+<h1>CUSTOMER REGISTRATION FORM</h1>
+</div>
+<a href="Reg_or_login.html" class="btn Back">Back</a>
+<div class="data"  align="center">
+    <form name="Customer_reg_form" action="http://localhost/Hera_Florist/PHPMailer/Customer_reg_db_connection.php" method="post">
+        <table border="0">
+	<col width="200">
+            <tr>
+                <td><h3><label>Name</label></h3></td>
+                <td><input type="text" name="Customer_name" required></input></td>
+            </tr>
+            <tr>
+                <td><h3><label>Contact Number</label></h3></td>
+                <td><input type="number" name="Customer_phone_no" required></input></td>
+            </tr>
+	    <tr>
+                <td><h3><label>Billing Address</label></h3></td>
+                <td><input type="text" name="Billing_address" required></input></td>
+            </tr>
+	    <tr>
+                <td><h3><label>Email Address</label></h3></td>
+                <td><input type="text" name="Email_address" required></input></td>
+            </tr>
+	    <tr>
+                <td><h3><label>Password(6 alphanumeric values)</label></h3></td>
+                <td><input type="password" name="Customer_password" required></input></td>
+            </tr>
+            <tr>
+		
+                <td><input type="submit"  value="Submit" />
+                <td><input type="reset"  value="Reset"/>		
+            </tr>
+	<tr>
+		
+            <h4>Upon submission please verify your email account by accepting our mail</h3>		
+            </tr>
+        </table>
+ </form>
+</div>
+</body>
+</html>

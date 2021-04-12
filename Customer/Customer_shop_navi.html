@@ -1,0 +1,131 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #1B43BA;
+  color: white;
+}
+
+/*Button*/
+.dropbtn 
+{
+    	background-color: black;
+    	padding: 14px 28px;
+    	font-size: 16px;
+    	cursor: pointer;
+    	color: white;
+
+}
+
+/*Dropdown content */
+.dropdown 
+{
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content  */
+.dropdown-content 
+{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+  z-index: 1;
+}
+
+/* Dropdown */
+.dropdown-content a 
+{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* To hide */
+.dropdown:hover .dropdown-content {display: block;}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+/* The "Sign Up" button */
+.button {
+  background-color: #0000FF;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;s
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="http://localhost/Hera_Florist/Customer/MainPage.php">Home</a>
+  <a href="http://localhost/Hera_Florist/Customer/Customer_account.php">My Account</a>
+  <a href="http://localhost/Hera_Florist/Customer/Cart.php">Cart</a>
+  <a href="http://localhost/Hera_Florist/Customer/Invoice_list.php">Track Order</a>
+  <a href="http://localhost/Hera_Florist/Customer/Customer_logout.php">Logout</a>
+</div>
+
+<div2 class="dropdown" >
+<button class="dropbtn">Occasions</button>
+<div2 class="dropdown-content">
+	<a href="http://localhost/Hera_Florist/Customer/Occasions.php?item=Congratulations" class="btn">Congratulations</a>
+	<a href="http://localhost/Hera_Florist/Customer/Occasions.php?item=Birthday" class="btn">Birthday</a>
+	<a href="http://localhost/Hera_Florist/Customer/Occasions.php?item=Graduation" class="btn">Graduation</a>
+	<a href="http://localhost/Hera_Florist/Customer/Occasions.php?item=Gws" class="btn">Get Well Soon</a>
+	<a href="http://localhost/Hera_Florist/Customer/Occasions.php?item=condolences" class="btn">Condolences</a>
+</div2>
+</div2>
+
+<div3 class="dropdown " >
+<button class="dropbtn">Flowers</button>
+<div3 class="dropdown-content">
+	<a href="http://localhost/Hera_Florist/Customer/Flowers.php?item=Rose" class="btn">Roses</a>
+	<a href="http://localhost/Hera_Florist/Customer/Flowers.php?item=Red Roses" class="btn">Red Roses</a>
+	<a href="http://localhost/Hera_Florist/Customer/Flowers.php?item=Mixed" class="btn">Mixed</a>
+</div3>
+</div3>
+
+<div4 class="dropdown " >
+<button class="dropbtn">Items</button>
+<div4 class="dropdown-content">
+	<a href="http://localhost/Hera_Florist/Customer/Item.php?item=Flowers" class="btn">Flowers</a>
+	<a href="http://localhost/Hera_Florist/Customer/Item.php?item=Chocolate" class="btn">Chocolate</a>
+	<a href="http://localhost/Hera_Florist/Customer/Item.php?item=Balloon" class="btn">Balloons</a>
+	<a href="http://localhost/Hera_Florist/Customer/Item.php?item=Basket" class="btn">Baskets</a>
+</div4>
+</div4>
+
+</body>
+</html>
